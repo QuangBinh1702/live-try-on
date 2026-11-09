@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+:root { color-scheme: light; }
+body { @apply bg-white text-neutral-900 antialiased; }
+
+@layer components {
+  .btn {
+    @apply rounded-lg border border-neutral-200 bg-white px-3 py-1.5 text-sm font-medium text-neutral-800 transition hover:bg-neutral-50 disabled:cursor-not-allowed disabled:opacity-40;
+  }
+  .btn-primary {
+    @apply rounded-lg bg-neutral-900 px-4 py-1.5 text-sm font-medium text-white transition hover:bg-neutral-700 disabled:cursor-not-allowed disabled:opacity-40;
+  }
+}
